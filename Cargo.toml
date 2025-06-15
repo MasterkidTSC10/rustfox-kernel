@@ -1,0 +1,19 @@
+[package]
+name = "rust-kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+limine = "0.4.0"
+linked_list_allocator = "0.10.5"
+x86_64 = "0.15.2"
+
+[build-dependencies]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+
